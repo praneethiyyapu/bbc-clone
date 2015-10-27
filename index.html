@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<style type="text/css">
+		body{
+			margin:0px;
+			font-family:Arial, Helvetica, sans-serfi;
+		}
+		#topdiv{
+			background-color:white;
+			width:100%;
+			height:40px;
+			color:white;
+			}
+		#innerdiv{
+			width:72.5%;
+			margin:0 auto;
+			background-color:white;
+			height:40px;
+			}
+		#bbcdiv{
+			#position:relative;
+			#top:8px;
+			padding-top:8px;	
+			padding-right:8px; 
+			float:left;
+			height:32px;
+			border-right:solid #CCCCCC 1px;
+            }
+		#signindiv{
+			float:left;
+			padding-left: 15px;
+			padding-top:9px;
+			padding-right:80px;
+			color:black;
+			font-size:0.9em;
+			font-weight:bold;
+			float:left;
+			height:31px;
+			border-right:solid #CCCCCC 1px;
+			
+			}
+		#signindiv img{
+			position:relative;
+			top:4px;
+			padding-right:5px;}
+		#menudiv{
+			float:left;
+			padding:0px;
+			}
+		.lis1{
+			padding:0px;	
+			margin:0px;
+			
+			list-style-type	:none;
+		}
+		.inlis1{
+			float:left;
+			padding-left:15px;
+			padding-right:15px;
+			padding-top:12px;
+			margin:0px;
+			color:black;
+			font-size:0.9em;
+			font-weight:bold;
+			height:28px;
+			border-right:solid #CCCCCC 1px;}
+		#morediv{
+			float:left;
+			padding-left:15px;
+			padding-right:50px;
+			padding-top:4px;
+			color:black;
+			font-size:0.9em;
+			font-weight:bold;
+			height:35px;
+			border-right:solid #CCCCCC 1px;
+			}
+		#morediv img{
+			position:relative;
+			top:9px;
+			left:50px;
+			}
+		#searchdiv{
+			width:0px;
+			float:left;
+			padding-left:10px;
+			color:black;
+			
+		}
+		#searchdiv input{
+			position:relative;
+			top:10px;
+			background-color:#E4E4E4;
+			height:22px;
+			padding-left:6px;
+			padding-right:20px;
+			color:black;
+			font-size:0.9em;
+			font-weight:bold;
+			border:none;
+			background-image:url("images/search.png");
+			background-repeat:no-repeat;
+			background-position:right center;
+			
+		}
+		#seconddiv{
+			background-color:#BB1919;
+			width:100%;
+			height:60px;
+			}
+		#second_inner{
+			width:72.5%;
+			margin:0 auto;
+			background-color:#BB1919;
+			height:60px;}
+		#second_inner img{
+			position:relative;
+			top:10px;
+			}
+		#thirddiv{
+			background-color:#A91717;
+			width:100%;
+			height:36px;
+		}
+		#third_inner{
+			width:72.5%;
+			margin:0 auto;
+			background-color:#A91717;
+			height:26px;
+			padding-top:10px;
+		}
+		.lis2{
+			padding:0px;	
+			margin:0px;
+			
+			list-style-type	:none;
+		}
+		.inlis2{
+			float:left;
+			padding-left:9px;
+			padding-right:9px;
+			margin:0px;
+			color:white;
+			font-size:0.9em;
+			font-weight:bold;
+			height:18px;
+			border-right:solid #BB4545 1px;}
+		.inlis2-1{
+			float:left;
+			padding-right:9px;
+			margin:0px;
+			color:white;
+			font-size:0.9em;
+			font-weight:bold;
+			height:18px;
+			border-right:solid #BB4545 1px;}
+		.inlis2-2{
+			float:left;
+			padding-left:9px;
+			margin:0px;
+			color:white;
+			font-size:0.9em;
+			font-weight:bold;
+			}
+		.inlis2-3{
+			float:left;
+			margin:0px;
+			}
+		#a1{
+			text-decoration:none;
+			color:black;
+		}
+		#a1:hover{
+			padding-bottom:4px;
+			width:10px;
+			border-bottom: 4px solid #A52A2A;
+		}
+		#a2{
+			text-decoration:none;
+			color:black;
+		}
+		#a2:hover{
+			padding-bottom:4px;
+			width:10px;
+			border-bottom: 4px solid #FFFF00;
+		}
+		#a3{
+			text-decoration:none;
+			color:black;
+		}
+		#a3:hover{
+			padding-bottom:4px;
+			width:10px;
+			border-bottom: 4px solid #ADD8E6;
+		}
+		#a4{
+			text-decoration:none;
+			color:black;
+		}
+		#a4:hover{
+			padding-bottom:4px;
+			width:10px;
+			border-bottom: 4px solid #2828FF;
+		}
+		#a5{
+			text-decoration:none;
+			color:black;
+		}
+		#a5:hover{
+			padding-bottom:4px;
+			width:10px;
+			border-bottom: 4px solid black;
+		}
+		#a6{
+			text-decoration:none;
+			color:black;
+		}
+		#a6:hover{
+			padding-bottom:4px;
+			width:10px;
+			border-bottom: 4px solid black;
+		}
+		#a0{
+			text-decoration:none;
+			color:black;
+		}
+		#a0:hover{
+			padding-bottom:4px;
+			width:10px;
+			border-bottom: 4px solid #2828FF;
+		}
+		#a7{
+			text-decoration:none;
+			color:white;
+		}
+		#a7:hover{
+			padding-bottom:4px;
+			width:10px;
+			border-bottom: 4px solid white;
+		}
+		#bodydiv{
+			float:left;
+			background-color:white;
+			width:100%;
+			height:400px;
+			color:black;
+			}
+		#innerbody{
+			width:72.5%;
+			margin:0 auto;
+			background-color:white;
+			height:400px;
+			}
+		#inner1{
+			padding-top:10px;
+			margin:0 auto;
+			width:72.5%;
+			float:left;
+			background-color:white;
+			height:400px;
+			}
+		.p1{
+			margin:0;
+			color:#404040;
+			font-size:1.2em;
+			width:117.5px;
+			border-bottom: 3px solid #BB1919;
+			
+			}
+		h1{
+			margin-bottom:10px;
+			color:#666666;
+			font-size:1.9em;
+			}
+		#h1a{
+			text-decoration:none;
+			color:#666666;}
+		#h1a:hover{
+			color:#1182D2;
+			}
+		.p2{
+			margin:0px;
+			margin-bottom:5px;
+			width:225px;
+			color:#5A5A5A;
+			font-size:0.9em;}
+		#clockdiv{
+			float:left;
+			padding:0px;
+			}
+		.clocklist{
+			float:left;
+			margin:0;
+			padding:0;
+			list-style-type	:none;
+			}
+		.clock1{
+			float:left;
+			color:#5A5A5A;
+			font-size:0.8em;
+			padding-right:4px;
+			border-right: 1px solid #DCDCDC;
+			}
+		.clock1 img{
+			position:relative;
+			top:4px;
+			right:2px;
+			}
+		.clock2{
+			float:left;
+			position:relative;
+			top:7px;
+			left:5px;
+			color:#BB1919;
+			font-size:0.8em;
+			}
+		.clock2a{
+			text-decoration:none;
+			color:#BB1919;
+			}
+		.clock2a:hover{
+			color:#1167C4;
+			}
+		.clear{
+			clear:both;
+			}
+		#borderdiv{
+			position:relative;
+			top:10px;
+			width:45px;
+			border-top: 1px solid #BB1919;
+			}
+		#contentdiv{
+			position:relative;
+			top:5px;
+			width:225px;
+			color:#222222;
+			font-size:0.9em;
+			}
+		#con1a{
+			text-decoration:none;
+			color:#222222;
+			}
+		#con1a:hover{
+			color:#1182D2;
+			}
+		#con2a{
+			text-decoration:none;
+			color:#222222;
+			}
+		#con2a:hover{
+			color:#1182D2;
+			}
+		.con2 img{
+			position:relative;
+			top:5px;
+			right:4px;}
+		#con3a{
+			text-decoration:none;
+			color:#222222;
+			}
+		#con3a:hover{
+			color:#1182D2;
+			}
+		#con4a{
+			text-decoration:none;
+			color:#222222;
+			}
+		#con4a:hover{
+			color:#1182D2;
+			}
+		.contentimg{
+			float:right;
+			position:relative;
+			bottom:290px;
+			right:75px;
+			width:55%
+			}
+		#watchdiv{
+			float:left;
+			position:relative;
+			top:65px;
+			right:65px;
+			width:136px;
+			background-color:white;
+			padding-left:15px;
+			border-left:1px solid #DCDCDC;
+			}
+		#w1{
+			color:#40444A;
+			font-size:1.5em;}
+		#watch_content{
+			float:right;
+			position:relative;
+			right:20px;
+			bottom:200px;
+			width:180px;
+			color:#666666;
+			font-weight:bold;
+			background-color:white;}
+		#watch_content img{
+			position:relative;
+			top:3px;}
+		#img1{
+			position:relative;
+			bottom:2px;
+			}
+		#img2{
+			position:relative;
+			top:10px;
+			}
+		#img3{
+			position:relative;
+			top:7px; 
+			}
+		.wcp1{
+			font-size:0.8em;
+			color:#5A5A5A;
+			font-weight:normal;
+			padding-right:5px;
+			border-right: 1px solid #DCDCDC;}
+		.clock2_a{
+			text-decoration:none;
+			color:#BB1919;
+			font-weight:normal;
+			font-size:0.8em;
+			}
+		.clock2_a:hover{
+			color:#1167C4;
+			}
+		.hovercontent{
+			text-decoration:none;
+			color:#666666;}
+		.hovercontent:hover {
+			color:#1182D2;}
+		
+		
+	</style>
+</head>
+<body>
+
+	<div id="container">
+		<div id="topdiv">
+			<div id="innerdiv">
+				<div id="bbcdiv">
+					<a href="http://www.bbc.com/" target="_blank"><img src ="images/bbc.png"></a>
+				</div>
+				<div id="signindiv">
+					<a id="a0" href="http://www.bbc.com/earth/" target="_blank"><img src ="images/signin.png">  Sign in</a>
+				</div>
+				<div id="menudiv">
+					<ul class="lis1">
+						<li class="inlis1"><a id="a1" href="https://ssl.bbc.com/id/signin?ptrt=http%3A%2F%2Fwww.bbc.com%2Fnews" target="_blank">News</a></li>
+						<li class="inlis1"><a id="a2" href="http://www.bbc.com/sport/" target="_blank">Sports</a></li>
+						<li class="inlis1"><a id="a3" href="http://www.bbc.com/weather/" target="_blank">Weather</a></li>
+						<li class="inlis1"><a id="a4" href="http://shop.bbc.com/" target="_blank">Shop</a></li>
+						<li class="inlis1"><a id="a5" href="http://www.bbc.com/earth/" target="_blank">Earth</a></li>
+					</ul>
+				</div>
+				<div id="morediv">
+					<a id="a6" href="http://www.bbc.com/news#orb-footer" target="_blank">More<img src="images/dropdown.png"></a>
+				</div>
+				<div id ="searchdiv">
+					<input type="text" name="search" placeholder="Search">
+				</div>
+			</div>
+			
+		</div>
+		<div id="seconddiv">
+			<div id ="second_inner">
+				<a href= "http://www.bbc.com/news" target="_blank"><img src="images/news.png"></a>
+			</div>
+		</div>
+		<div id="thirddiv">
+			<div id="third_inner">
+				<div id="second_menu">
+					<ul class="lis2">
+						<li class="inlis2-1"><a id="a7" href="http://www.bbc.com/news" target="_blank">Home</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/video_and_audio/international" target="_blank">Video</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/world" target="_blank">World</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/world/us_and_canada" target="_blank">US & Canada</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/uk" target="_blank">UK</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/business" target="_blank">Business</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/technology" target="_blank">Tech</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/science_and_environment" target="_blank">Science</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/magazine" target="_blank">Magazine</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/entertainment_and_arts" target="_blank">Entertainment & Arts</li></a>
+						<li class="inlis2"><a id="a7" href="http://www.bbc.com/news/health" target="_blank">Health</li></a>
+						<li class="inlis2-2"><a id="a7" href="" target="_blank">More</li></a>
+						<li class="inlis2-3"><a id="a7" href="" target="_blank"><img src="images/dropdown_2.png"></li></a>
+					</ul>
+				</div>				
+			</div>
+		</div>
+		<div id="bodydiv">
+			<div id="innerbody">
+				<div id="inner1">
+					<p class="p1">US & Canada</p>
+					<h1><a id="h1a" href="http://www.bbc.com/news/world-us-canada-34589250" target="_blank">Canada to withdraw jets from IS battle</a></h1>
+					<p class ="p2">Canada's PM-designate Justin Trudeau tells the US president he will be withdrawing
+					Canadian fighter jets  from  the air strikes against Islamic State.</p>
+					<div id="clockdiv">
+						<ul class="clocklist">
+							<li class="clock1"><img src="images/clock.png">1 hour ago</li>
+							<li class="clock2"><a class="clock2a" href="http://www.bbc.com/news/world-us-canada-34589250" target="_blank">US & Canada</a></li>
+						</ul>
+					</div>
+					<p class="clear"></p>
+					<div id="borderdiv">
+					</div>
+					<div id="contentdiv">
+					<p class="con1"><a id="con1a" href="http://www.bbc.com/news/magazine-34585178" target="_blank">Is Canada's new  PM the only world leader  with a tattoo?<a/></p>
+					<p class="con2"><a id="con2a" href="http://www.bbc.com/news/world-us-canada-34586005" target="_blank"><img src="images/play.png" >Trudeau: 'hard work begins'</a></p>
+					<p class="con3"><a id="con3a" href="http://www.bbc.com/news/world-us-canada-34566369" target="_blank">How the unthinkable happened</a></p>
+					<p class="con4"><a id="con4a" href="http://www.bbc.com/news/world-us-canada-34583753" target="_blank">What Harper got wrong</a></p>
+					</div>
+					<img class="contentimg" src="images/jet.png">
+				</div>
+				<div id="watchdiv">	
+					<p id="w1">Watch/Listen </p>
+					<p id="img1"><a href="http://www.bbc.com/news/world-us-canada-34578800" target="_blank"><img src="images/bieber.png"></a></p>
+					<p id="img2"><a href="http://www.bbc.com/news/world-us-canada-34586005" target="_blank"><img src="images/trudeau.png"></a></p>
+					<p id="img3"><a href="http://www.bbc.com/news/world-us-canada-34578800" target="_blank"><img src="images/politics.png"></a></p>
+					</div>
+				<div id="watch_content">
+					<p><a class="hovercontent" href="http://www.bbc.com/news/world-us-canada-34578800" target="_blank">Trudeau or Bieber?
+					Battle of Justins</a><br>
+					<span class="wcp1"><img src="images/clock.png">20 October 2015</span><br>
+					<a class="clock2_a" href="http://www.bbc.com/news/world-us-canada-34589250" target="_blank">US & Canada</a></p>
+					<p><a class="hovercontent" href="http://www.bbc.com/news/world-us-canada-34586005" target="_blank">Justin Trudeau:
+					'Canada's back'</a><br>
+					<span class="wcp1"><img src="images/clock.png">9 hours ago</span>
+					<a class="clock2_a" href="http://www.bbc.com/news/world-us-canada-34589250" target="_blank">US & Canada</a></p>
+					<p><a class="hovercontent" href="http://www.bbc.com/news/world-us-canada-34578800" target="_blank">The moment Canadian
+					politics changed</a><br>
+					<span class="wcp1"><img src="images/clock.png">20 October 2015</span><br>
+					<a class="clock2_a" href="http://www.bbc.com/news/world-us-canada-34589250" target="_blank">US & Canada</a></p>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</body>
+
+</html>
